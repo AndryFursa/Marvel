@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './components/app/App'
-import MarvelService from './services/MarvelService'
+
 import './style/style.scss'
 
 //v17
@@ -12,8 +12,6 @@ import './style/style.scss'
 //   document.getElementById('root')
 // )
 //v18+
-const marvelService = new MarvelService()
-marvelService.getAllCharacters().then((res) => console.log(res))
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
